@@ -1,9 +1,11 @@
-export const Statistic = ({ good, neutral, bad, total, positivePercentage }) => (
-    <div>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
-      <p>Total: {total()}</p>
-      <p>Positive feedback: {positivePercentage()}%</p>
-    </div>
-  );
+export const Statistic = ({ good, neutral, bad, total, positivePercentage}) => {
+return (
+<section>
+    <ul>
+        <li>Good:{good} </li>
+        <li>Neutral: {neutral}</li>
+        <li>Bad:{bad} </li>
+        <li>Total: {total}</li>
+        <li>Positive feedback: {positivePercentage}%</li>
+    </ul>
+</section>) }
