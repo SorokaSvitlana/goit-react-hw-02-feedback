@@ -1,3 +1,9 @@
+import PropTypes from 'prop-types';
+import { NotificationWrapper } from './Notification.Styled';
 export const Notification  =({ message }) => {
-    return <p>{message}</p>;
+    return <NotificationWrapper>{message}</NotificationWrapper>;
+  };
+  
+  Notification.propTypes = {
+    message: PropTypes.string,
   };
